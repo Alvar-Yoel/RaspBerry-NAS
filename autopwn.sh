@@ -64,14 +64,7 @@ wget -O – https://github.com/OpenMediaVault-Plugin-Developers/installScript/ra
 echo -e "${turquoiseColour}[${endColour}${redColour}-${endColour}${turquoiseColour}]${endColour} Reiniciando sistema...\n"
 reboot
 
-#
-#Cierra el Primer Paso
-#
-else
-      echo -e "\n${redColour}[+]${endColour} Cerrando Script"
-      exit 1
-   fi
-   break
+break
 ;;
 
 #
@@ -88,6 +81,8 @@ else
 #
 echo -e "${greenColour}[+]${endColour} Ahora vamos a cambiar la contraseña por defecto que es admin:openmediavault"
 read -p "[+] Introduce una contraseña nueva: " password
+break
+;;
 
 #
 #Cierra la primera pregunta
