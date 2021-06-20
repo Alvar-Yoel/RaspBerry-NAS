@@ -82,8 +82,10 @@ break
 #
 #Configurando contraseña
 #
-echo -e "${greenColour}[+]${endColour} Ahora dirigete a tu navegador e ingresa tu IP y pon las creedenciales por defecto que es admin:openmediavault"
-echo -e "${greenColour}[+]${endColour} Ahora podras configurar tu servidor NAS a tu gusto"
+echo -e "${greenColour}[+]${endColour} Ahora vamos a cambiar las creedenciales por defecto que es admin:openmediavault"
+echo -e "${greenColour}[+]${endColour} Para ello entraras en la ${redColour}3 opcion${endColour}"
+sleep 2
+omv-firstaid
 
 break
 ;;
