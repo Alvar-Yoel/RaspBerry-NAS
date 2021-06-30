@@ -15,15 +15,16 @@ grayColour="\e[0;37m\033[1m"
 #
 #Dice Saliendo...
 #
-function goodbye() {
+function ctrl_c() {
     # say goodbye
     echo -e "\n\n${purpleColour}[+]${endColour} Saliendo...\n"
+    exit 1
 }
 
 #
 #Cuando das control+C sale del programa
 #
-trap "goodbye" EXIT
+trap ctrl_c INT
 
 #
 #Variables
